@@ -77,6 +77,10 @@ body {
     border: solid 1px $borderColor;
     border-top: none;
     color: $btnTextColor;
+
+    &:active {
+        background-color: black;
+    }
 }
 
 #clearAllBtn {
@@ -87,6 +91,10 @@ body {
     border-top: none;
     color: $btnTextColor;
     font-size: $btnTextSize;
+
+    &:active {
+        background-color: black;
+    }
 }
 
 .zeroBtn {

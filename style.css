@@ -61,6 +61,9 @@ body {
   border-top: none;
   color: white;
 }
+#clearBtn:active {
+  background-color: black;
+}
 
 #clearAllBtn {
   padding-left: 0;
@@ -70,6 +73,9 @@ body {
   border-top: none;
   color: white;
   font-size: 30px;
+}
+#clearAllBtn:active {
+  background-color: black;
 }
 
 .zeroBtn {
