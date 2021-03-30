@@ -39,11 +39,17 @@ opeBtns.forEach((opeBtn) => opeBtn.addEventListener('click', event => {
 }));
 
 numBtns.forEach((numBtn) => numBtn.addEventListener('click', event => {
-    clearDisplay();
     hasPeriod();
+    clearDisplay();
     setDisplay(event.target.textContent);
     mustClearDisplay = false;
+    dotBtn.disabled = false;
 }));
+
+dotBtn.addEventListener('click', () => {
+    hasPeriod();
+
+})
 
 document.addEventListener('keydown', event => {
     // numbers
@@ -74,6 +80,7 @@ clearBtn.addEventListener('click', () => {
 
 clearAllBtn.addEventListener('click', () => {
     clearAll();
+    dotBtn.disabled = false;
 })
 
 equBtn.addEventListener('click', () => {
