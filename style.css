@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  border: none;
+}
+
+body {
+  background-color: rgba(59, 172, 163, 0.7);
+}
+
+#title {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #2F2F2F;
+}
+
+#container {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#display {
+  height: 90px;
+  background-color: #2F2F2F;
+  border: solid 1px white;
+  color: white;
+  font-size: 22.5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#calc-container {
+  overflow: hidden;
+  max-width: 350px;
+  display: grid;
+  grid-template: "clearAll clearAll clear div" "seven eigth nine mul" "four five six min" "one two three plu" "zero zero dot equ";
+}
+
+.numBtn {
+  font-size: 30px;
+  height: 90px;
+  background-color: #2F2F2F;
+  border: solid 1px white;
+  border-top: none;
+  color: white;
+}
+.numBtn:active {
+  background-color: grey;
+}
+
+#clearBtn {
+  height: 90px;
+  font-size: 30px;
+  background-color: #2F2F2F;
+  border: solid 1px white;
+  border-top: none;
+  color: white;
+}
+
+#clearAllBtn {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #2F2F2F;
+  border: solid 1px white;
+  border-top: none;
+  color: white;
+  font-size: 30px;
+}
+
+.zeroBtn {
+  font-size: 30px;
+  background-color: #2F2F2F;
+  border: solid 1px white;
+  color: white;
+}
+
+.opBtn, #equBtn {
+  font-size: 30px;
+  background-color: #3BACA3;
+  border: solid 1px white;
+  border-top: none;
+}
+.opBtn:active, #equBtn:active {
+  background-color: grey;
+  color: white;
+}
+
+#michel {
+  margin-top: 0px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  background-color: #2F2F2F;
+  color: white;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#michel > a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+#num0 {
+  grid-area: zero;
+}
+
+#num1 {
+  grid-area: one;
+}
+
+#num2 {
+  grid-area: two;
+}
+
+#num3 {
+  grid-area: three;
+}
+
+#num4 {
+  grid-area: four;
+}
+
+#num5 {
+  grid-area: five;
+}
+
+#num6 {
+  grid-area: six;
+}
+
+#num7 {
+  grid-area: seven;
+}
+
+#num8 {
+  grid-area: eigth;
+}
+
+#num9 {
+  grid-area: nine;
+}
+
+#dotBtn {
+  grid-area: dot;
+}
+
+#equBtn {
+  grid-area: equ;
+}
+
+#plu {
+  grid-area: plu;
+}
+
+#min {
+  grid-area: min;
+}
+
+#mul {
+  grid-area: mul;
+}
+
+#div {
+  grid-area: div;
+}
+
+#clearBtn {
+  grid-area: clear;
+}
+
+#clearAllBtn {
+  grid-area: clearAll;
+}

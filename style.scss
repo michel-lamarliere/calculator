@@ -1,0 +1,191 @@
+$btnSize: 90px;
+$btnTextSize: 30px;
+$clearBtnsFontSize: 30px;
+$mainColor: #2F2F2F;
+$btnBgColor: #2F2F2F;
+$btnTextColor: white;
+$opeBgColor: #3BACA3;
+$opeTextColor: #2F2F2F;
+$borderColor: white;
+$activeBgColor: grey;
+$activeTextColor: white;
+
+* {
+    margin: 0;
+    border: none;
+}
+
+body {
+    background-color: rgba(59, 172, 163, 0.7);
+}
+
+#title {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $btnBgColor
+}
+
+#container {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#display {
+    height: $btnSize;
+    background-color: $btnBgColor;
+    border: solid 1px $borderColor;
+    color: $btnTextColor;
+    font-size: $btnTextSize * 0.75;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#calc-container {
+    overflow: hidden;
+    max-width: 350px;
+    display: grid;
+    grid-template:
+        'clearAll clearAll clear div'
+        'seven eigth nine mul'
+        'four five six min'
+        'one two three plu'
+        'zero zero dot equ';
+}
+
+.numBtn {
+    font-size: $btnTextSize;
+    height: $btnSize;
+    background-color: $btnBgColor;
+    border: solid 1px $borderColor;
+    border-top: none;
+    color: $btnTextColor;
+
+    &:active {
+        background-color: grey;
+    }
+}
+
+#clearBtn {
+    height: $btnSize;
+    font-size: $btnTextSize;
+    background-color: $btnBgColor;
+    border: solid 1px $borderColor;
+    border-top: none;
+    color: $btnTextColor;
+}
+
+#clearAllBtn {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $btnBgColor;
+    border: solid 1px $borderColor;
+    border-top: none;
+    color: $btnTextColor;
+    font-size: $btnTextSize;
+}
+
+.zeroBtn {
+    font-size: $btnTextSize;
+    background-color: $btnBgColor;
+    border: solid 1px $borderColor;
+    color: $btnTextColor;
+}
+
+.opBtn {
+    font-size: $btnTextSize;
+    background-color: $opeBgColor;
+    border: solid 1px $borderColor;
+    border-top: none;
+
+    &:active {
+        background-color: $activeBgColor;
+        color: $btnTextColor;
+    }
+}
+
+#equBtn {
+    @extend .opBtn;
+}
+
+#michel {
+    margin-top: 0px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    background-color: $btnBgColor;
+    color: $btnTextColor;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+    & > a {
+        text-decoration: none;
+        color: inherit;
+        padding: 10px;
+    }
+}
+
+#num0 {
+grid-area: zero;
+}
+#num1 {
+grid-area: one;
+}
+#num2 {
+grid-area: two;
+}
+#num3 {
+grid-area: three;
+}
+#num4 {
+grid-area: four;
+}
+#num5 {
+grid-area: five;
+}
+#num6 {
+grid-area: six;
+}
+#num7 {
+grid-area: seven;
+}
+#num8 {
+grid-area: eigth;
+}
+#num9 {
+grid-area: nine;
+}
+#dotBtn {
+grid-area: dot;
+}
+#equBtn {
+grid-area: equ;
+}
+#plu {
+grid-area: plu;
+}
+#min {
+grid-area: min;
+}
+#mul {
+grid-area: mul;
+}
+#div {
+grid-area: div;
+}
+#clearBtn {
+grid-area: clear;
+}
+#clearAllBtn {
+grid-area: clearAll;
+}
