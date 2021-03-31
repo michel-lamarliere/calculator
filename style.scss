@@ -22,7 +22,7 @@ body {
 #title {
     font-family: Poppins, sans-serif;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
     margin-bottom: 10px;
     color: $btnBgColor
 }
@@ -34,7 +34,7 @@ body {
 }
 
 #display {
-    margin-top: 5vh;
+    margin-top: 2vh;
     height: $btnSize;
     background-color: $btnBgColor;
     border: solid 1px $borderColor;
@@ -122,7 +122,7 @@ body {
 }
 
 #michel {
-    margin-top: 5vh;
+    margin-top: 2vh;
     font-family: Poppins, sans-serif;
     text-align: center;
     background-color: $btnBgColor;

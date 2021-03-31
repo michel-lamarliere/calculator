@@ -10,7 +10,7 @@ body {
 #title {
   font-family: Poppins, sans-serif;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 2vh;
   margin-bottom: 10px;
   color: #2F2F2F;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 #display {
-  margin-top: 5vh;
+  margin-top: 2vh;
   height: 90px;
   background-color: #2F2F2F;
   border: solid 1px white;
@@ -98,7 +98,7 @@ body {
 }
 
 #michel {
-  margin-top: 5vh;
+  margin-top: 2vh;
   font-family: Poppins, sans-serif;
   text-align: center;
   background-color: #2F2F2F;
