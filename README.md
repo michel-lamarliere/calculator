@@ -1,3 +1,3 @@
 # calculator
 
-https://github.com/michel-lamarliere/calculator
+https://michel-lamarliere.github.io/calculator/
